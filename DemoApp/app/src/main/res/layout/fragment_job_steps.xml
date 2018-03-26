@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:padding="@dimen/twenty_dp">
+
+        <include layout="@layout/fragment_haul_on_steps_layout" />
+
+        <include layout="@layout/fragment_haul_off_steps_layout" />
+
+        <include layout="@layout/fragment_on_site_steps_layout" />
+
+        <include layout="@layout/fragment_dirt_deal_steps_layout" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/point_five_dp"
+        android:layout_marginLeft="@dimen/five_dp"
+        android:layout_marginRight="@dimen/five_dp"
+        android:background="@color/hint_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_gray"
+            android:orientation="vertical"
+            android:padding="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/details_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/ten_dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_blue_step_circle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="1"
+                            android:textColor="@color/blue_text" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/five_dp"
+                        android:src="@drawable/ic_gray_dotted_line" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_gray_step_circle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="2"
+                            android:textColor="@color/hint_color" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/five_dp"
+                        android:src="@drawable/ic_gray_dotted_line" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_gray_step_circle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="3"
+                            android:textColor="@color/hint_color" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/five_dp"
+                        android:src="@drawable/ic_gray_dotted_line" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_gray_step_circle">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="4"
+                            android:textColor="@color/hint_color" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ten_dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@id/alliance_po_label"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/five_dp"
+                            android:text="@string/alliance_po"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/sixteen_sp" />
+
+                        <TextView
+                            android:id="@+id/alliance_po"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/five_dp"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/sixteen_sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/five_dp"
+                            android:text="@string/bill_material_to"
+                            android:textColor="@color/text_gray"
+                            android:textSize="@dimen/sixteen_sp" />
+
+                        <TextView
+                            android:id="@+id/bill_material_to"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/five_dp"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/sixteen_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:fitsSystemWindows="true"
+                        android:padding="@dimen/ten_dp"
+                        android:text="@string/material_qty_yards"
+                        android:textColor="@color/blue_text" />
+
+                    <EditText
+                        android:id="@+id/material_qty"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/time_background"
+                        android:hint="@string/enter_material_qty"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:nextFocusForward="@+id/pit_ticket_number"
+                        android:padding="@dimen/seven_dp"
+                        android:singleLine="true"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColorHint="@color/hint_color" />
+
+                    <TextView
+                        android:id="@+id/units"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner"
+                        android:fitsSystemWindows="true"
+                        android:padding="@dimen/ten_dp"
+                        android:textColor="@color/blue_text" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/pit_ticket_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:fitsSystemWindows="true"
+                        android:padding="@dimen/ten_dp"
+                        android:text="@string/pit_ticket_number"
+                        android:textColor="@color/blue_text" />
+
+                    <EditText
+                        android:id="@+id/pit_ticket_number"
+                        android:layout_width="@dimen/zero_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/time_background"
+                        android:hint="@string/enter_ticket_number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="@dimen/seven_dp"
+                        android:singleLine="true"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColorHint="@color/hint_color" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pit_ticket_image_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="@drawable/rounded_corner"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:text="@string/pit_ticket_photo"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/fifteen_sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/get_pit_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:background="@drawable/ic_camera">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/twenty_eight_dp"
+                            android:text="@string/take_pic"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/fifteen_sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ticket_image_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/pit_ticket_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_fifty_dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_corner"
+                        android:padding="@dimen/ten_dp" />
+
+                    <TextView
+                        android:id="@+id/delete_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/five_dp"
+                        android:background="@drawable/blue_circle"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/done_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty_dp"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/forteen_sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fragment_map_layout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

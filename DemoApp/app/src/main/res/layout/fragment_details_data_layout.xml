@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/ten_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingLeft="@dimen/fifteen_dp"
+        android:paddingRight="@dimen/fifteen_dp"
+        android:paddingTop="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/job"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/job_name"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/material_label"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/material"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/material_type"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qty_remaining_label"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/qty_remaining"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/qty_remaining"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/alliance_po_label"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/alliance_po"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/alliance_po"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/pay"
+                android:textColor="@color/text_gray" />
+
+
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/backhaul_pay_label"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/backhaul_pay"
+                android:textColor="@color/text_gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/backhaul_pay"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bill_material_to_label"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/bill_material_to"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/bill_material_to"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/instructions_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upper_rounded_croner"
+            android:padding="@dimen/ten_dp"
+            android:text="@string/special_instructions"
+            android:textColor="@color/blue_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/point_two_dp"
+            android:background="@color/line_box" />
+
+        <TextView
+            android:id="@+id/special_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten_dp"
+            android:textColor="@color/text_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/point_two_dp"
+            android:background="@color/line_box" />
+
+        <CheckBox
+            android:id="@+id/read_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:button="@drawable/custom_checkbox"
+            android:padding="@dimen/ten_dp"
+            android:text="@string/mark_as_read"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/blue_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingTop="@dimen/ten_dp">
+
+        <TextView
+            android:id="@+id/customer_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:text="@string/customer1"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/blue_text"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/loading_customer_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginBottom="@dimen/two_dp"
+            android:layout_marginTop="@dimen/two_dp"
+            android:background="@color/background_gray"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/customer_name"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/job_label"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/job"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/loading_job"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dd_alliacne_po_lable"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/alliance_po"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/dd_alliacne_po"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/contact_person"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/contact_person"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/contact_phone"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/contact_phone"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/five_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:text="@string/customer2"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/blue_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginBottom="@dimen/two_dp"
+            android:layout_marginTop="@dimen/two_dp"
+            android:background="@color/background_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/customer_name"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/customer_name2"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/job"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/dumping_job"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dd_dumping_alliacne_po_lable"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/alliance_po"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/dd_dumping_alliacne_po"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/contact_person"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/contact_person2"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:text="@string/contact_phone"
+                android:textColor="@color/text_gray" />
+
+            <TextView
+                android:id="@+id/contact_phone2"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/five_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:textColor="@color/blue_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/source_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/two_dp"
+            android:src="@drawable/ic_source_icon" />
+
+        <ImageView
+            android:id="@+id/dotted_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/source_icon"
+            android:paddingBottom="@dimen/five_dp"
+            android:paddingLeft="@dimen/ten_dp"
+            android:paddingTop="@dimen/five_dp"
+            android:src="@drawable/ic_dotted_line" />
+
+        <ImageView
+            android:id="@+id/destination_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dotted_line"
+            android:layout_marginLeft="@dimen/two_dp"
+            android:src="@drawable/ic_desination_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_toRightOf="@+id/source_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textColor="@color/blue_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/from_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/from_job_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/from_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dotted_line"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_toRightOf="@+id/destination_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:textColor="@color/blue_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/to_customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/to_job_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/to_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/start_job_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:text="@string/start_this_job"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/forteen_sp" />
+
+    <TextView
+        android:id="@+id/partially_completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/twenty_dp"
+        android:text="@string/partially_completed"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/pending_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/decline_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rounded_red_blue"
+            android:text="@string/decline"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_text" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_rounded_green_blue"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_text" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/haul_on_steps_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/haul_on_first_step"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3">
+
+                <TextView
+                    android:id="@+id/haul_on_step_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1."
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <ImageView
+                    android:id="@+id/haul_on_first_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_green_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8.7"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/twenty_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pickuup_load"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/haul_on_from_customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/text_gray" />
+
+                    <TextView
+                        android:id="@+id/haul_on_from_job_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/text_gray" />
+
+                    <TextView
+                        android:id="@+id/haul_on_pickup_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/text_gray" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/haul_on_second_step"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/rounded_corner_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3">
+
+                <TextView
+                    android:id="@+id/haul_on_step_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2."
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <ImageView
+                    android:id="@+id/haul_on_second_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_green_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.7"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/twenty_dp">
+
+                <TextView
+                    android:id="@+id/haul_on_drop_off_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/drop_off_load"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/haul_on_to_customer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/text_gray" />
+
+                    <TextView
+                        android:id="@+id/haul_on_to_job_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/text_gray" />
+
+                    <TextView
+                        android:id="@+id/haul_on_drop_off_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/text_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/haul_on_third_step"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/rounded_corner_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3">
+
+                <TextView
+                    android:id="@+id/haul_on_step_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="3."
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <ImageView
+                    android:id="@+id/haul_on_third_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_green_check"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/haul_on_third_check_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_red_cross"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/haul_on_get_signature_label"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8.7"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/twenty_dp"
+                android:text="@string/get_signature"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/twenty_sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/haul_on_forth_step"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:background="@drawable/rounded_corner_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3">
+
+                <TextView
+                    android:id="@+id/haul_on_step_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="4."
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_green_check"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.7"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/twenty_dp">
+
+                <TextView
+                    android:id="@+id/haul_on_complete_job_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complete_job"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/twenty_sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

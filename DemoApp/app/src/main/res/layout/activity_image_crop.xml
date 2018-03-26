@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ultra_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ultra_dark"
+        tools:context=".MainActivity">
+
+        <io.togoto.imagezoomcrop.photoview.PhotoView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center" />
+
+        <io.togoto.imagezoomcrop.cropoverlay.CropOverlayView
+            android:id="@+id/crop_overlay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:guideLines="true"
+            app:marginSide="20dp"
+            app:marginTop="20dp" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/twenty_dp"
+            android:layout_marginLeft="@dimen/fifty_dp"
+            android:layout_marginRight="@dimen/fifty_dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_filled_red_cross" />
+
+            <ImageView
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tick" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

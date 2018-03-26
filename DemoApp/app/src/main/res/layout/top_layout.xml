@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/fifty_dp"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
+        android:background="@drawable/border_rounded_croner_blue"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/one_dp"
+        android:paddingLeft="@dimen/one_point_two_dp"
+        android:paddingRight="@dimen/one_point_two_dp"
+        android:paddingTop="@dimen/one_dp">
+
+        <Button
+            android:id="@+id/details_button"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue_text"
+            android:gravity="center"
+            android:text="@string/details"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/map_button"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/map"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_text" />
+    </LinearLayout>
+</LinearLayout>

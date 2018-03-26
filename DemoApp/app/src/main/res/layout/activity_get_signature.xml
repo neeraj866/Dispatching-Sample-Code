@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadow"
+    android:padding="@dimen/ten_dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_sig_full_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/five_dp">
+
+        <LinearLayout
+            android:id="@+id/signature_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/circular_croner"
+            android:padding="@dimen/ten_dp"
+            android:src="@drawable/ic_cancel" />
+
+        <ImageButton
+            android:id="@+id/reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circular_croner"
+            android:padding="@dimen/ten_dp"
+            android:src="@drawable/ic_reload" />
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circular_croner"
+            android:padding="@dimen/ten_dp"
+            android:rotation="90"
+            android:src="@drawable/ic_grey_check" />
+
+    </RelativeLayout>
+</RelativeLayout>
